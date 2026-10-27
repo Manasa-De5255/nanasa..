@@ -1,0 +1,6 @@
+{
+  "name": "Unicore CampusConnect",
+  "description": "Enterprise college management portal with 5 custom themes, secure Super Admin credentials governance, academic timetables, faculty payroll, grievance resolution, student-voted campus spots, and multilingual voice assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

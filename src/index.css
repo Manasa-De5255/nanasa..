@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  /* 1. Academic Blue (Default) */
+  :root,
+  [data-theme="academic-blue"] {
+    --bg-base: #F4F7FB;
+    --bg-surface: #FFFFFF;
+    --bg-subtle: #EBF1F8;
+    --border-subtle: #D8E2EC;
+    --text-main: #0B2545;
+    --text-muted: #536B88;
+    --brand-primary: #0B2545;
+    --brand-secondary: #134074;
+    --brand-accent: #2A6F97;
+    --brand-light: #EEF4F8;
+    --brand-contrast: #FFFFFF;
+  }
+
+  [data-theme="academic-blue"][data-mode="dark"] {
+    --bg-base: #071324;
+    --bg-surface: #0C1E36;
+    --bg-subtle: #132A4A;
+    --border-subtle: #1D3B63;
+    --text-main: #F0F5FA;
+    --text-muted: #8FAECF;
+    --brand-primary: #1E4E8C;
+    --brand-secondary: #2B69B3;
+    --brand-accent: #48CAE4;
+    --brand-light: #10243E;
+    --brand-contrast: #FFFFFF;
+  }
+
+  /* 2. Elegant Cream */
+  [data-theme="elegant-cream"] {
+    --bg-base: #FAF8F5;
+    --bg-surface: #FFFFFF;
+    --bg-subtle: #F3EFE9;
+    --border-subtle: #E6DFD5;
+    --text-main: #1C2333;
+    --text-muted: #6B7280;
+    --brand-primary: #1C2333;
+    --brand-secondary: #354259;
+    --brand-accent: #B08938;
+    --brand-light: #F6F1E9;
+    --brand-contrast: #FFFFFF;
+  }
+
+  [data-theme="elegant-cream"][data-mode="dark"] {
+    --bg-base: #14171F;
+    --bg-surface: #1E232E;
+    --bg-subtle: #29303D;
+    --border-subtle: #384252;
+    --text-main: #F8F6F2;
+    --text-muted: #A3AAB8;
+    --brand-primary: #B08938;
+    --brand-secondary: #D4AF37;
+    --brand-accent: #E5C368;
+    --brand-light: #252830;
+    --brand-contrast: #14171F;
+  }
+
+  /* 3. Ocean Breeze */
+  [data-theme="ocean-breeze"] {
+    --bg-base: #F0F6F9;
+    --bg-surface: #FFFFFF;
+    --bg-subtle: #E2EFF5;
+    --border-subtle: #C9DFEB;
+    --text-main: #0B2B43;
+    --text-muted: #4B6E87;
+    --brand-primary: #0D3B66;
+    --brand-secondary: #007791;
+    --brand-accent: #00A896;
+    --brand-light: #E7F6F6;
+    --brand-contrast: #FFFFFF;
+  }
+
+  [data-theme="ocean-breeze"][data-mode="dark"] {
+    --bg-base: #061826;
+    --bg-surface: #0C253B;
+    --bg-subtle: #143552;
+    --border-subtle: #1C486E;
+    --text-main: #EDF7FC;
+    --text-muted: #81ABC9;
+    --brand-primary: #00A896;
+    --brand-secondary: #02C39A;
+    --brand-accent: #48CAE4;
+    --brand-light: #0B283A;
+    --brand-contrast: #04101A;
+  }
+
+  /* 4. Midnight Professional */
+  [data-theme="midnight-pro"],
+  [data-theme="midnight-pro"][data-mode="light"],
+  [data-theme="midnight-pro"][data-mode="dark"] {
+    --bg-base: #0A111F;
+    --bg-surface: #121B2F;
+    --bg-subtle: #1B2640;
+    --border-subtle: #283756;
+    --text-main: #F1F5F9;
+    --text-muted: #94A3B8;
+    --brand-primary: #2563EB;
+    --brand-secondary: #3B82F6;
+    --brand-accent: #38BDF8;
+    --brand-light: #162444;
+    --brand-contrast: #FFFFFF;
+  }
+
+  /* 5. Sage & Ivory */
+  [data-theme="sage-ivory"] {
+    --bg-base: #F8F8F5;
+    --bg-surface: #FFFFFF;
+    --bg-subtle: #EEF0EC;
+    --border-subtle: #D8DCD4;
+    --text-main: #202D27;
+    --text-muted: #576960;
+    --brand-primary: #385648;
+    --brand-secondary: #4A6B5D;
+    --brand-accent: #688B77;
+    --brand-light: #EDF3EF;
+    --brand-contrast: #FFFFFF;
+  }
+
+  [data-theme="sage-ivory"][data-mode="dark"] {
+    --bg-base: #111A16;
+    --bg-surface: #182520;
+    --bg-subtle: #22332C;
+    --border-subtle: #2E453C;
+    --text-main: #F2F5F3;
+    --text-muted: #8EA79A;
+    --brand-primary: #4A6B5D;
+    --brand-secondary: #688B77;
+    --brand-accent: #88B19B;
+    --brand-light: #1D2E27;
+    --brand-contrast: #FFFFFF;
+  }
+}
+
+/* Custom Utilities mapped to tokens */
+.bg-base { background-color: var(--bg-base); }
+.bg-surface { background-color: var(--bg-surface); }
+.bg-subtle { background-color: var(--bg-subtle); }
+.border-subtle { border-color: var(--border-subtle); }
+.text-main { color: var(--text-main); }
+.text-muted-custom { color: var(--text-muted); }
+
+.bg-brand { background-color: var(--brand-primary); }
+.text-brand { color: var(--brand-primary); }
+.border-brand { border-color: var(--brand-primary); }
+
+.bg-brand-accent { background-color: var(--brand-accent); }
+.text-brand-accent { color: var(--brand-accent); }
+.border-brand-accent { border-color: var(--brand-accent); }
+
+.bg-brand-light { background-color: var(--brand-light); }
+.text-brand-contrast { color: var(--brand-contrast); }
+
+/* Status tokens */
+.status-pending { color: #B45309; background-color: #FEF3C7; border-color: #FDE68A; }
+.status-approved { color: #047857; background-color: #D1FAE5; border-color: #A7F3D0; }
+.status-forwarded { color: #4338CA; background-color: #E0E7FF; border-color: #C7D2FE; }
+.status-resolved { color: #0F766E; background-color: #CCFBF1; border-color: #99F6E4; }
+.status-closed { color: #475569; background-color: #F1F5F9; border-color: #E2E8F0; }
